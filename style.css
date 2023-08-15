@@ -5,9 +5,9 @@
 }
 .calculator-section{
     /* border: 2px solid ; */
-    background-color: azure;
+    background-color: black;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,12 +15,12 @@
 }
 
 .calulator-container{
-    border: 1px solid ;
-    border-radius: 20px;
+    /* border: 1px solid ; */
+    /* border-radius: 20px; */
     background-color: transparent;
     background-image: linear-gradient(to bottom, #fff, #f8eedb);
-    min-height: 80vh;
-    width: 400px;
+    /* min-height: 80vh; */
+    /* width: 100vw; */
 }
 
 .displays{
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     margin: 12px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .displays #input-number{
@@ -67,19 +67,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 10px 0;
     
 }
 
 .input-buttons .input-btn{
     height: 65px;
-    width: 75px;
+    width: 70px;
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
 
     color: #fff;
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
     background-color: #38D2D2;
     background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
     /* box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2); */
@@ -99,4 +99,30 @@
 
 .input-buttons .input-btn:hover{
     border: 2px solid black;
+}
+
+/* Media query for mobile devices up to 400px */
+@media (max-width: 400px) {
+    .calulator-container {
+        width: 90%; /* Adjust the container width for smaller screens */        
+    }
+    
+    .displays {
+        margin: 8px; /* Adjust margin for smaller screens */
+        padding: 10px;
+    }
+    
+    .displays #input-number {
+        font-size: 20px; /* Adjust font size for smaller screens */        
+    }
+    
+    .displays #display-result {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .input-buttons .input-btn {
+        height: 50px; /* Adjust button height for smaller screens */
+        width: 50px; /* Adjust button width for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
 }

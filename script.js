@@ -11,7 +11,7 @@ Array.from(inputbtns).forEach((ib)=>{
             try{                
                 displayresult.innerHTML = eval(input) 
                 if(displayresult.innerHTML == "Infinity"){
-                    displayresult.innerHTML = "can not devide by zero"
+                    displayresult.innerHTML = "can not divide by zero"
                 }else{
                     inputnumber.value = displayresult.innerHTML
                     displayresult.innerHTML = ""
@@ -53,7 +53,7 @@ Array.from(inputbtns).forEach((ib)=>{
                     inputnumber.value = input    
                     displayresult.innerHTML = eval(input)   
                     if(displayresult.innerHTML == "Infinity"){
-                        displayresult.innerHTML = "can not devide by zero"
+                        displayresult.innerHTML = "can not divide by zero"
                     }                 
                 }
 
