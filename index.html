@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoHack Calculator - Roshan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="calculator-section">
+        <div class="calulator-container">
+            <div class="displays">
+                <input type="text" id="input-number" placeholder="0" disabled>
+                <span id="display-result"></span>
+            </div>
+            <div class="input-buttons">
+                <div class="row">
+                    <button type="button" value="AC" class="input-btn operator">AC</button>
+                    <button type="button" value="%"  class="input-btn operator">%</button>
+                    <button type="button" value="bs" class="input-btn operator material-icons">&#xe14a;</button>
+                    <button type="button" value="/"  class="input-btn operator">&#xf7;</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="7"  class="input-btn">7</button>
+                    <button type="button" value="8"  class="input-btn">8</button>
+                    <button type="button" value="9"  class="input-btn">9</button>
+                    <button type="button" value="*"  class="input-btn operator">x</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="4"  class="input-btn">4</button>
+                    <button type="button" value="5"  class="input-btn">5</button>
+                    <button type="button" value="6"  class="input-btn">6</button>
+                    <button type="button" value="-"  class="input-btn operator">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="1"  class="input-btn">1</button>
+                    <button type="button" value="2"  class="input-btn">2</button>
+                    <button type="button" value="3"  class="input-btn">3</button>
+                    <button type="button" value="+"  class="input-btn operator">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" value="00" class="input-btn">00</button>
+                    <button type="button" value="0"  class="input-btn">0</button>
+                    <button type="button" value="."  class="input-btn">.</button>
+                    <button type="button" value="="  class="input-btn" id="equal-to">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
